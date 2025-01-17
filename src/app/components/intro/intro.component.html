@@ -1,0 +1,151 @@
+<!-- <section
+  id="home"
+  class="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+>
+<div class="flex items-center justify-center">
+    <div class="relative">
+      
+      <div
+        @fadeInScale
+        class="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl bg-cover bg-center"
+      ></div>
+
+      
+      <span
+        class="absolute bottom-0 right-0 text-4xl animate-bounce"
+        @springIn
+        aria-label="Waving Hand Emoji"
+      >
+        👋
+      </span>
+    </div>
+  </div>
+
+  
+  <h1
+    class="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl"
+    @slideIn
+  >
+    <span class="font-bold">Hello, I'm Ricardo.</span> I'm a
+    <span class="font-bold">full-stack developer</span> with
+    <span class="font-bold">8 years</span> of experience. I enjoy
+    building <span class="italic">sites & apps</span>. My focus is
+    <span class="underline">React (Next.js)</span>.
+  </h1>
+
+  <div
+    class="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+    @slideIn
+  >
+    
+    <a
+      href="#contact"
+      class="group pi pi-arrow-right bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+      aria-label="Contact me"
+    >
+      Contact me here
+    </a>
+
+    
+    <a
+      href="/Talha_Tahir_SE_CV.pdf"
+      download
+      class="group pi pi-download bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+      aria-label="Download my CV"
+    >
+      Download CV
+    </a>
+
+    
+    <a
+      href="https://linkedin.com"
+      target="_blank"
+      rel="noopener"
+      title="Visit my LinkedIn profile"
+      class="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+      aria-label="LinkedIn profile"
+    >
+      <i class="pi pi-linkedin text-xl"></i>
+    </a>
+
+    
+    <a
+      href="https://github.com"
+      target="_blank"
+      rel="noopener"
+      title="Visit my GitHub profile"
+      class="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+      aria-label="GitHub profile"
+    >
+      <i class="pi pi-github text-xl"></i>
+    </a>
+  </div>
+</section>
+  
+   -->
+
+<section class="mb-28 max-w-[50rem] text-center sm:mb-0">
+  <div class="flex items-center justify-center">
+    <div class="relative">
+      <div @fadeInScale>
+        <img
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+          alt="Ricardo portrait"
+          width="192"
+          height="192"
+          quality="100"
+          class="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl bg-cover bg-center"
+        />
+      </div>
+      <span class="absolute bottom-0 right-0 text-4xl" @springIn>👋</span>
+    </div>
+  </div>
+  <p
+    @slideIn
+    class="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+  >
+    <span class="font-bold">Hello, I'm Talha.</span> I'm a
+    <span class="font-bold">full-stack developer</span> with
+    <span class="font-bold">8 years</span> of experience. I enjoy building
+    <span class="italic">sites & apps</span>. My focus is
+    <span class="underline">React (Next.js)</span>.
+  </p>
+  
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium" @slideIn>
+    <a
+    routerLink="contact"
+    class="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+    >Contact Me
+    <i class="pi pi-arrow-right"></i>
+  </a>
+  <a
+    href="/Talha Tahir SE CV.pdf"
+    title="Download CV"
+    class="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+  >
+    Download CV
+    <i class="pi pi-download"></i>
+  </a>
+  <a
+    class="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+    target="_blank"
+    rel="noopener"
+    title="Visit my LinkedIn profile"
+    aria-label="LinkedIn profile"
+    href="https://linkedin.com"
+  >
+    <i class="pi pi-linkedin text-xl"></i>
+  </a>
+  <a
+    class="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+    target="_blank"
+    rel="noopener"
+    title="Visit my GitHub profile"
+    aria-label="GitHub profile"
+    href="https://github.com"
+  >
+    <i class="pi pi-github text-xl"></i>
+  </a>
+  </div>
+  
+</section>
