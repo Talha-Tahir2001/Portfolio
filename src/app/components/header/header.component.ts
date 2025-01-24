@@ -1,4 +1,4 @@
-import { Component, HostListener, inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 
 import { NavLink } from '../../models/Links';
 
@@ -11,7 +11,7 @@ import {
   state,
 } from '@angular/animations';
 import {  Router, RouterModule } from '@angular/router';
-import { IntroComponent } from "../intro/intro.component";
+
 
 
 @Component({

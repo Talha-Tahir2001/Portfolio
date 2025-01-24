@@ -1,13 +1,12 @@
 import { Component, ElementRef, inject, signal } from '@angular/core';
 import { Skills } from '../../models/Skills';
 import { trigger, style, transition, animate, query, stagger } from '@angular/animations';
-import { IntersectionObserverService } from '../../services/intersection-observer.service';
-import { NgStyle } from '@angular/common';
+
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [NgStyle],
+  imports: [],
   templateUrl: './skills.component.html',
   styles: ``,
   animations: [
