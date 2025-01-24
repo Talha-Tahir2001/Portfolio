@@ -38,8 +38,16 @@ export class ProjectsComponent {
       description: 'lorem ipsum dolor sit amet, consectetur adip inc commodo sed',
       tags: ['Angular', 'Tailwind CSS', 'Google Gemini'],
       imageUrl: '/senti.png',
-      repoUrl: 'https://github.com/username/sentinel',
-      deployedUrl: 'https://github.com/username/sentinel.json',
+      repoUrl: 'https://github.com/Talha-Tahir2001/sentinel',
+      deployedUrl: 'https://sentinel-xi.vercel.app/',
+    },
+    {
+      title: 'Textractor',
+      description: 'lorem ipsum dolor sit amet, consectetur adip inc commodo sed',
+      tags: ['Angular', 'Tailwind CSS', 'Google Gemini'],
+      imageUrl: '/textractor.jpg',
+      repoUrl: 'https://github.com/Talha-Tahir2001/textractor',
+      deployedUrl: 'https://textractor-blond.vercel.app/',
     },
     {
       title: 'Portfolio',
@@ -47,17 +55,10 @@ export class ProjectsComponent {
         'lorem ipsum dolor sit amet, consectetur adip inc commodo sed',
       tags: ['Angular', 'Tailwind CSS', 'Google Gemini'],
       imageUrl: '/senti.png',
-      repoUrl: 'https://github.com/username/sentinel',
-      deployedUrl: 'https://github.com/username/sentinel.json',
+      repoUrl: 'https://github.com/Talha-Tahir2001/portfolio',
+      deployedUrl: 'https://portfolio-eight-chi-89.vercel.app/home',
     },
-    {
-      title: 'Sentinel',
-      description: 'lorem ipsum dolor sit amet, consectetur adip inc commodo sed',
-      tags: ['Angular', 'Tailwind CSS', 'Google Gemini'],
-      imageUrl: '/senti.png',
-      repoUrl: 'https://github.com/username/sentinel',
-      deployedUrl: 'https://github.com/username/sentinel.json',
-    },
+   
   ]);
   animationState = 'hidden';
 
