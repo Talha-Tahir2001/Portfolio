@@ -1,0 +1,116 @@
+<section class="mb-28 scroll-mt-28">
+    <h2 class="text-3xl font-medium capitalize mb-8 text-center">My Projects</h2>
+    <div>
+      @for (project of projects(); track $index) {
+      <div 
+        #projectRef
+        class="group mb-3 sm:mb-8 last:mb-0"
+        [@projectAnimation]="getAnimationState(projectRef)"
+        [style.opacity]="getOpacity(projectRef)"
+      >
+        <section class="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] 
+          hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+          
+          <div class="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full"
+               [class.sm:group-even:ml-[18rem]]="$index % 2 !== 0">
+            <h3 class="text-2xl font-semibold">{{ project.title }}</h3>
+            <p class="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+              {{ project.description }}
+            </p>
+            <ul class="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+              @for (tag of project.tags; track tag) {
+                <li class="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">
+                  {{ tag }}
+                </li>
+              }
+            </ul>
+              <div class="mt-4 flex gap-4">
+                <a
+                class="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                target="_blank"
+                rel="noopener"
+                title="Visit my GitHub Repository"
+                aria-label="LinkedIn profile"
+                href="https://github.com/Talha-Tahir2001/"
+              >
+                <i class="pi pi-github text-md"></i>
+              </a>
+              <a
+              class="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              target="_blank"
+              rel="noopener"
+              title="Visit the Live Preview"
+              aria-label="LinkedIn profile"
+              href="https://linkedin.com/in/Talha-Tahir2001/"
+            >
+              <i class="pi pi-external-link text-md"></i>
+            </a>
+              </div>
+            </div>
+
+            <!-- <div class="flex flex-wrap justify-center gap-4"> -->
+                <img title="{{project.title}}" [ngSrc]="project.imageUrl"
+                [alt]="project.title"
+                [width]="452"
+                [height]="320"
+                (error)="handleImageError($event)"
+                class="absolute hidden sm:block top-8 w-[28.25rem] rounded-t-lg shadow-2xl
+                  transition duration-300
+                  group-hover:scale-[1.04]
+                  group-hover:-translate-x-3
+                  group-hover:translate-y-3
+                  group-hover:-rotate-2"
+                [class.-right-40]="$index % 2 === 0"
+                [class.group-even:right-[initial]]="$index % 2 !== 0"
+                [class.group-even:-left-40]="$index % 2 !== 0"
+                [class.group-even:group-hover:translate-x-3]="$index % 2 !== 0"
+                [class.group-even:group-hover:translate-y-3]="$index % 2 !== 0"
+                [class.group-even:group-hover:rotate-2]="$index % 2 !== 0"
+           />
+        <!-- </div> -->
+          </section>
+        </div>
+        
+      }
+    </div>
+  </section>
+  
+<!-- <section class="container mx-auto px-4">
+    <h2 class="text-3xl font-medium capitalize mb-8">My Projects</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        @for (project of projects(); track $index) {
+        <div class="project-card rounded-lg overflow-hidden shadow-lg">
+            
+            <div class="relative aspect-video">
+                @if(project.imageUrl) {
+                    <img 
+                        [ngSrc]="project.imageUrl" 
+                        [alt]="project.title"
+                        [width]="400"
+                        [height]="300"
+                        loading="lazy"
+                        class="object-cover w-full h-full"
+                        (error)="handleImageError($event)"
+                    />
+                } @else {
+                    <div class="bg-gray-200 w-full h-full flex items-center justify-center">
+                        <span class="text-gray-400">No image available</span>
+                    </div>
+                }
+            </div>
+            
+            
+            <div class="p-4">
+                <h3 class="text-2xl font-medium mb-2">{{project.title}}</h3>
+                <p class="text-gray-600 mb-4">{{project.description}}</p>
+                <div class="flex flex-wrap gap-2">
+                    @for(tag of project.tags; track tag) {
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">{{tag}}</span>
+                    }
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section> -->
