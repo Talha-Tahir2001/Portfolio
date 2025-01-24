@@ -9,7 +9,7 @@ import { NgIf } from '@angular/common';
   standalone: true,
   imports: [TimelineModule, CardModule, NgIf],
   templateUrl: './experience.component.html',
-  styles: ``
+  styles: ``,
 })
 export class ExperienceComponent {
   // events = [
@@ -20,24 +20,35 @@ export class ExperienceComponent {
   myExperience = signal<Experiences[]>([
     {
       title: 'Graduated from University',
-      location: 'Miami, FL',
-      description: 'Graduated after 4 years of Bachelor\'s of Science in Software Engineering.',
+      location: 'Pakistan',
+      description:
+        "Graduated after 4 years of Bachelor's of Science in Software Engineering.",
       icon: 'pi pi-graduation-cap',
       date: 'Oct 2020 - Jul 2024',
     },
     {
-      title: 'Front-End Developer',
-      location: 'Orlando, FL',
-      description: 'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+      title: 'Freelance Software Engineer',
+      location: 'Remote | Fiverr',
+      description:
+        'Delivered pixel-perfect Precision and responsive user experiences. Built small-scale web apps for clients, demonstrating creativity and adaptability',
       icon: '',
-      date: '2019 - 2021',
+      date: 'Nov 2021 - Dec 2022',
     },
     {
-      title: 'Full-Stack Developer',
-      location: 'Houston, TX',
-      description: 'I\'m now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I\'m open to full-time opportunities.',
+      title: 'Machine Learning Intern',
+      location: 'Remote',
+      description:
+        'Developed machine learning models for detecting credit card fraud (81% accuracy) and classifying movie genres (79% accuracy) using techniques like logistic regression, decision trees, and neural networks and Designed predictive models for spam SMS detection (87% reduction in false positives) and breast cancer diagnosis (84% sensitivity and specificity) using natural language processing and support vector machines',
       icon: '',
-      date: '2021 - present',
+      date: 'Jul 2023 - Aug 2023',
+    },
+    {
+      title: 'Web Engineering Intern',
+      location: 'Remote',
+      description:
+        " Improved Core Web Vitals metrics, achieving a 30% reduction in Largest Contentful Paint (LCP) and a 25% increase in First Input Delay (FID) performance by optimizing assets and implementing lazy loading in Angular apps. Improved accessibility score on tools like Lighthouse (e.g., raised from 71 to 84)",
+      icon: '',
+      date: 'Oct 2024 - Dec 2024',
     },
   ]);
 }
