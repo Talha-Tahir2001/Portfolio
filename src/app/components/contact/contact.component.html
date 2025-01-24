@@ -1,1 +1,46 @@
-<p>contact works!</p>
+<section class="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center">
+    <h2 class="text-3xl font-medium capitalize mb-8 text-center">Contact Me</h2>
+    <p class="text-gray-700 -mt-6 dark:text-white/80">
+      Please contact me directly at
+      <a class="underline" href="mailto:example@gmail.com">
+        666talhatahir&#64;gmail.com
+      </a>
+      or through this form.
+    </p>
+    <form class="mt-10 flex flex-col">
+      <input [(ngModel)]="form.name"
+        name="from_name"
+        type="text"
+        required
+        maxlength="500"
+        placeholder="Your Name"
+        class="h-14 px-4 rounded-lg mb-2 borderBlack bg-white dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-50 transition-all"
+      />
+      <input [(ngModel)]="form.email"
+        name="from_email"
+        type="email"
+        required
+        maxlength="500"
+        placeholder="Your email"
+        class="h-14 px-4 rounded-lg borderBlack bg-white dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-50 transition-all"
+      />
+      <textarea [(ngModel)]="form.message"
+        name="message"
+        
+        required
+        maxlength="5000"
+        placeholder="Your message"
+        class="h-52 my-3 rounded-lg borderBlack p-4 bg-white dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-50 transition-all"
+      ></textarea>
+      <button (click)="send()"
+        type="submit"
+        class="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+      >
+        Submit
+        <i
+          class="pi pi-send text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1"
+        ></i>
+      </button>
+    </form>
+  </section>
+  
