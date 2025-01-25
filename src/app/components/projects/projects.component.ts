@@ -45,7 +45,7 @@ export class ProjectsComponent {
       title: 'Textractor',
       description: 'lorem ipsum dolor sit amet, consectetur adip inc commodo sed',
       tags: ['Angular', 'Tailwind CSS', 'Google Gemini'],
-      imageUrl: '/textractor.jpg',
+      imageUrl: '/textractor.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/textractor',
       deployedUrl: 'https://textractor-blond.vercel.app/',
     },

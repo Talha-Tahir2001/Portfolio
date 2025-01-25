@@ -50,9 +50,10 @@
 
             <!-- <div class="flex flex-wrap justify-center gap-4"> -->
                 <img title="{{project.title}}" [ngSrc]="project.imageUrl"
+                priority
                 [alt]="project.title"
-                [width]="452"
-                [height]="320"
+                [width]="400"
+                [height]="300"
                 (error)="handleImageError($event)"
                 class="absolute hidden sm:block top-8 w-[28.25rem] rounded-t-lg shadow-2xl
                   transition duration-300
