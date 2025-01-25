@@ -86,17 +86,17 @@ export class HeaderComponent {
 
   setActiveLink(linkName: string) {
     const lowercaseName = linkName.toLowerCase();
-    console.log('Original linkName:', linkName);
-    console.log('Lowercase linkName:', lowercaseName);
-    console.log('Current router URL:', this.router.url);
+    // console.log('Original linkName:', linkName);
+    // console.log('Lowercase linkName:', lowercaseName);
+    // console.log('Current router URL:', this.router.url);
     
     this.activeLink.set(lowercaseName);
     
     // Ensure we're using the lowercase version for navigation
-    this.router.navigate([lowercaseName]).then(
-      success => console.log('Navigation success:', success),
-      error => console.error('Navigation error:', error)
-    );
+    // this.router.navigate([lowercaseName]).then(
+    //   success => console.log('Navigation success:', success),
+    //   error => console.error('Navigation error:', error)
+    // );
   }
   capitalizeFirst(str: string): string {
     return str.charAt(0).toUpperCase() + str.slice(1);
