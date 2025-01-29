@@ -42,6 +42,14 @@ export class ProjectsComponent {
       deployedUrl: 'https://sentinel-xi.vercel.app/',
     },
     {
+      title: 'SpamBuster',
+      description: 'SpamBuster: An AI Powered Tool for Spam Detection',
+      tags: ['Python', 'Gradio', 'Keras','Numpy', 'NLTK', 'Pandas'],
+      imageUrl: '/spam-sms.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/ML-and-DL',
+      deployedUrl: 'https://huggingface.co/spaces/Talha-tahir666/Spam-SMS-Detection',
+    },
+    {
       title: 'Textractor',
       description: 'Textractor: An AI-Powered tool for accurate and efficient text extraction.',
       tags: ['Angular', 'Tailwind CSS', 'Google Gemini',  ],
@@ -50,14 +58,25 @@ export class ProjectsComponent {
       deployedUrl: 'https://textractor-blond.vercel.app/',
     },
     {
+      title: 'Snake',
+      description:
+        'Snake: A basic Snake Game that was built in Java with AWT and Swing',
+      tags: ['Java', 'Abstract Window Toolkit', 'Swing'],
+      imageUrl: '/snake.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/Snake-Game',
+      deployedUrl: 'https://github.com/Talha-Tahir2001/Snake-Game',
+    },
+    {
       title: 'Portfolio',
       description:
-        'lorem ipsum dolor sit amet, consectetur adip inc commodo sed',
-      tags: ['Angular', 'Tailwind CSS', 'Google Gemini'],
+        'Portfolio: My personal website created using Angular, Tailwind CSS, and PrimeNG.',
+      tags: ['Angular', 'Tailwind CSS', 'PrimeNG'],
       imageUrl: '/senti.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/portfolio',
       deployedUrl: 'https://portfolio-eight-chi-89.vercel.app/home',
     },
+    
+    
    
   ]);
   animationState = 'hidden';
