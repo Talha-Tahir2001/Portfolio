@@ -35,16 +35,16 @@ export class ProjectsComponent {
   projects = signal<Projects[]>([
     {
       title: 'Sentinel',
-      description: 'lorem ipsum dolor sit amet, consectetur adip inc commodo sed',
-      tags: ['Angular', 'Tailwind CSS', 'Google Gemini'],
+      description: 'Sentinel: An AI Powered Tool for Sentiment Analysis',
+      tags: ['Angular', 'Tailwind CSS', 'DaisyUI','Google Gemini Pro'],
       imageUrl: '/senti.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/sentinel',
       deployedUrl: 'https://sentinel-xi.vercel.app/',
     },
     {
       title: 'Textractor',
-      description: 'lorem ipsum dolor sit amet, consectetur adip inc commodo sed',
-      tags: ['Angular', 'Tailwind CSS', 'Google Gemini'],
+      description: 'Textractor: An AI-Powered tool for accurate and efficient text extraction.',
+      tags: ['Angular', 'Tailwind CSS', 'Google Gemini',  ],
       imageUrl: '/textractor.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/textractor',
       deployedUrl: 'https://textractor-blond.vercel.app/',
