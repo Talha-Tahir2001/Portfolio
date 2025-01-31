@@ -58,6 +58,34 @@ export class ProjectsComponent {
       deployedUrl: 'https://textractor-blond.vercel.app/',
     },
     {
+      title: 'Weather Whiz',
+      description:
+        'Weather Whiz: A weather app built with Angular and Yahoo Weather Services.',
+      tags: ['Angular', 'Rest API', 'Yahoo Weather API', ],
+      imageUrl: '/weather.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/WeatherWhiz',
+      deployedUrl: 'https://weather-whiz-woad.vercel.app/',
+    },
+    {
+      title: 'NBA CRUD App',
+      description:
+        'NBA CRUD App: A CRUD app built with Angular, ASP.NET CORE Web API, and SQL Server',
+      tags: ['Angular', 'ASP.NET CORE', 'Angular Material', 'SQL Server'],
+      imageUrl: '/nba-crud.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/NbaPlayers.UI',
+      deployedUrl: 'https://github.com/Talha-Tahir2001/NbaPlayers.UI',
+    },
+    
+    {
+      title: 'Portfolio',
+      description:
+        'Portfolio: My personal website created using Angular, Tailwind CSS, and PrimeNG.',
+      tags: ['Angular', 'Tailwind CSS', 'PrimeNG'],
+      imageUrl: '/portfolio.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/Portfolio',
+      deployedUrl: 'https://portfolio-eight-chi-89.vercel.app/home',
+    },
+    {
       title: 'Snake',
       description:
         'Snake: A basic Snake Game that was built in Java with AWT and Swing',
@@ -65,15 +93,6 @@ export class ProjectsComponent {
       imageUrl: '/snake.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/Snake-Game',
       deployedUrl: 'https://github.com/Talha-Tahir2001/Snake-Game',
-    },
-    {
-      title: 'Portfolio',
-      description:
-        'Portfolio: My personal website created using Angular, Tailwind CSS, and PrimeNG.',
-      tags: ['Angular', 'Tailwind CSS', 'PrimeNG'],
-      imageUrl: '/senti.png',
-      repoUrl: 'https://github.com/Talha-Tahir2001/portfolio',
-      deployedUrl: 'https://portfolio-eight-chi-89.vercel.app/home',
     },
     
     
