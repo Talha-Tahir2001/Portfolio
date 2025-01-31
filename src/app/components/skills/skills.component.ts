@@ -29,6 +29,9 @@ export class SkillsComponent {
 
   mySkills = signal<Skills[]>([
     { name: 'Angular 18' },
+    { name: 'NEST JS' },
+    {name: 'Firebase'},
+    {name: 'MongoDB'},
     { name: 'TypeScript' },
     { name: 'HTML 5' },
     { name: 'Tailwind CSS' },    
