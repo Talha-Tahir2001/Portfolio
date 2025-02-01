@@ -12,11 +12,7 @@ import { NgIf } from '@angular/common';
   styles: ``,
 })
 export class ExperienceComponent {
-  // events = [
-
-  //   { status: 'Example Event' }
-
-  // ];
+  
   myExperience = signal<Experiences[]>([
     {
       title: 'Graduated from University',
@@ -31,7 +27,7 @@ export class ExperienceComponent {
       location: 'Remote | Fiverr',
       description:
         'Delivered pixel-perfect Precision and responsive user experiences. Built small-scale web apps for clients, demonstrating creativity and adaptability',
-      icon: '',
+      icon: 'pi pi-code',
       date: 'Nov 2021 - Dec 2022',
     },
     {
@@ -39,7 +35,7 @@ export class ExperienceComponent {
       location: 'Remote',
       description:
         'Developed machine learning models for detecting credit card fraud (81% accuracy) and classifying movie genres (79% accuracy) using techniques like logistic regression, decision trees, and neural networks and Designed predictive models for spam SMS detection (87% reduction in false positives) and breast cancer diagnosis (84% sensitivity and specificity) using natural language processing and support vector machines',
-      icon: '',
+      icon: 'pi pi-cog',
       date: 'Jul 2023 - Aug 2023',
     },
     {
@@ -47,7 +43,7 @@ export class ExperienceComponent {
       location: 'Remote',
       description:
         " Improved Core Web Vitals metrics, achieving a 30% reduction in Largest Contentful Paint (LCP) and a 25% increase in First Input Delay (FID) performance by optimizing assets and implementing lazy loading in Angular apps. Improved accessibility score on tools like Lighthouse (e.g., raised from 71 to 84)",
-      icon: '',
+      icon: 'pi pi-desktop',
       date: 'Oct 2024 - Dec 2024',
     },
   ]);

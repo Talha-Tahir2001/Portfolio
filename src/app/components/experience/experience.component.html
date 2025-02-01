@@ -36,13 +36,15 @@
         </div>
       </ng-template>
       <ng-template pTemplate="marker" let-event>
-        <i
-          class="pi pi-map-marker 
-          text-lg sm:text-xl 
-          text-gray-900 dark:text-gray-50 
-          transition-all 
+        <span class="timeline-marker flex items-center justify-center 
+          w-8 h-8 rounded-full 
+          bg-white dark:bg-slate-700 
+          shadow-md
+          transition-all duration-300 
           hover:scale-110"
-        ></i>
+        >
+          <i [class]="event.icon + ' text-lg text-slate-800 dark:text-white'"></i>
+        </span>
       </ng-template>
     </p-timeline>
   </section>
