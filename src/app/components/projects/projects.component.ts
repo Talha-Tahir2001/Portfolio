@@ -44,7 +44,7 @@ export class ProjectsComponent {
     {
       title: 'SpamBuster',
       description: 'SpamBuster: An AI Powered Tool for Spam Detection',
-      tags: ['Python', 'Gradio', 'Keras','Numpy', 'NLTK', 'Pandas'],
+      tags: ['Python', 'Huggingface', 'Gradio','Keras', 'NLTK'],
       imageUrl: '/spam-sms.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/ML-and-DL',
       deployedUrl: 'https://huggingface.co/spaces/Talha-tahir666/Spam-SMS-Detection',
