@@ -1,53 +1,52 @@
 <section class="px-4 sm:px-8 lg:px-16 py-8">
-    <h2 class="text-2xl sm:text-3xl font-medium capitalize mb-6 sm:mb-8 text-center">
-      My Experience
-    </h2>
-    <p-timeline
-      [value]="myExperience()"
-      layout="vertical"
-      align="alternate"
-      class="max-w-4xl mx-auto w-full"
-    >
-      <ng-template pTemplate="content" let-event>
-        <div
-          class="event-content 
+  <h2 class="text-2xl sm:text-3xl font-medium capitalize mb-6 sm:mb-8 ">
+    My Experience
+  </h2>
+  <p-timeline
+    [value]="myExperience()"
+    layout="vertical"
+    [align]="(isMobile() ? 'left' : 'alternate')"
+    class="w-full max-w-4xl mx-auto"
+  >
+    <ng-template pTemplate="content" let-event>
+      <div class="event-content 
           bg-white dark:bg-gray-800 
           rounded-lg shadow-lg 
-          p-3 sm:p-4 
+          p-4 sm:p-6 
           text-left 
           transition-all 
           hover:shadow-xl
-          w-full"
-        >
-          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">
-            {{ event.title }}
-          </h3>
-          <div class="space-y-1">
-            <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-              <strong>Location:</strong> {{ event.location }}
-            </p>
-            <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-              <strong>Description:</strong> {{ event.description }}
-            </p>
-            <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-              <strong>Date:</strong> {{ event.date }}
-            </p>
-          </div>
+          w-full
+          sm:w-[calc(100%-4rem)]">
+        <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">
+          {{ event.title }}
+        </h3>
+        <div class="space-y-2">
+          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
+            <strong>Location:</strong> {{ event.location }}
+          </p>
+          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
+            <strong>Description:</strong> {{ event.description }}
+          </p>
+          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
+            <strong>Date:</strong> {{ event.date }}
+          </p>
         </div>
-      </ng-template>
-      <ng-template pTemplate="marker" let-event>
-        <span class="timeline-marker flex items-center justify-center 
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate="marker" let-event>
+      <span class="timeline-marker flex items-center justify-center 
           w-8 h-8 rounded-full 
           bg-white dark:bg-slate-700 
           shadow-md
           transition-all duration-300 
-          hover:scale-110"
-        >
-          <i [class]="event.icon + ' text-lg text-slate-800 dark:text-white'"></i>
-        </span>
-      </ng-template>
-    </p-timeline>
-  </section>
+          hover:scale-110">
+        <i [class]="event.icon + ' text-lg text-slate-800 dark:text-white'"></i>
+      </span>
+    </ng-template>
+  </p-timeline>
+</section>
 
 
   <!-- <section class="flex flex-col items-start sm:items-center px-4 sm:px-8 lg:px-16 py-8">
@@ -97,77 +96,4 @@
   </section> -->
 
 
-  <!-- <section class="px-4 sm:px-8 lg:px-16">
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">
-      My Experience
-    </h2>
-    <p-timeline
-      [value]="myExperience()"
-      layout="vertical"
-      align="left"
-      class="max-w-4xl mx-auto"
-    >
-      <ng-template pTemplate="content" let-event>
-        <div
-          class="event-content bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-left transition-all hover:shadow-xl"
-        >
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-50">
-            {{ event.title }}
-          </h3>
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
-            <strong>Location:</strong> {{ event.location }}
-          </p>
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
-            <strong>Description:</strong> {{ event.description }}
-          </p>
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
-            <strong>Date:</strong> {{ event.date }}
-          </p>
-        </div>
-      </ng-template>
-      <ng-template pTemplate="marker" let-event>
-        <i
-          class="pi pi-map-marker text-xl text-gray-900 dark:text-gray-50 transition-all hover:scale-110"
-        ></i>
-      </ng-template>
-    </p-timeline>
-  </section> -->
-
-  
-
-  <!-- <section class="px-4 sm:px-8 lg:px-16">
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">
-      My Experience
-    </h2>
-    <p-timeline
-      [value]="myExperience()"
-      layout="vertical"
-      align="left"
-      class="max-w-4xl mx-auto flex flex-col items-start sm:items-center"
-    >
-      <ng-template pTemplate="content" let-event>
-        <div
-          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-left transition-all hover:shadow-xl w-full sm:w-[calc(50%-2rem)] sm:ml-10"
-        >
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-50">
-            {{ event.title }}
-          </h3>
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
-            <strong>Location:</strong> {{ event.location }}
-          </p>
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
-            <strong>Description:</strong> {{ event.description }}
-          </p>
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
-            <strong>Date:</strong> {{ event.date }}
-          </p>
-        </div>
-      </ng-template>
-      <ng-template pTemplate="marker" let-event>
-        <i
-          class="pi pi-map-marker text-xl text-gray-900 dark:text-gray-50 transition-all hover:scale-110 sm:ml-10"
-        ></i>
-      </ng-template>
-    </p-timeline>
-  </section> -->
   

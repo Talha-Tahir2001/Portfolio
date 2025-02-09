@@ -1,18 +1,33 @@
 import { Component, signal } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
-import { CardModule } from 'primeng/card';
+
 
 import { Experiences } from '../../models/Experiences';
-import { NgIf } from '@angular/common';
+
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [TimelineModule, CardModule, NgIf],
+  imports: [TimelineModule,  ],
   templateUrl: './experience.component.html',
-  styles: ``,
+  styles: `
+
+
+  `,
 })
 export class ExperienceComponent {
+  isMobile = signal(false);
+
+  constructor() {
+    if (typeof window !== 'undefined') {
+      this.checkMobile();
+      window.addEventListener('resize', () => this.checkMobile());
+    }
+  }
   
+  checkMobile() {
+    this.isMobile.set(window.innerWidth < 640);
+  }
+
   myExperience = signal<Experiences[]>([
     {
       title: 'Graduated from University',
@@ -32,7 +47,7 @@ export class ExperienceComponent {
     },
     {
       title: 'Machine Learning Intern',
-      location: 'Remote',
+      location: 'Remote ',
       description:
         'Developed machine learning models for detecting credit card fraud (81% accuracy) and classifying movie genres (79% accuracy) using techniques like logistic regression, decision trees, and neural networks and Designed predictive models for spam SMS detection (87% reduction in false positives) and breast cancer diagnosis (84% sensitivity and specificity) using natural language processing and support vector machines',
       icon: 'pi pi-cog',
