@@ -94,6 +94,24 @@ export class ProjectsComponent {
       repoUrl: 'https://github.com/Talha-Tahir2001/Snake-Game',
       deployedUrl: 'https://github.com/Talha-Tahir2001/Snake-Game',
     },
+    {
+      title: 'Jokesverse',
+      description:
+        'Jokesverse: A CRUD app with Search Functionality, built with C# and .NET 6 MVC',
+      tags: ['C#', '.Net 6 MVC', 'SQL Server', 'Entity Framework Core'],
+      imageUrl: '/jokesverse-1.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/JokesVerse',
+      deployedUrl: 'https://github.com/Talha-Tahir2001/JokesVerse',
+    },
+    {
+      title: 'Weather App',
+      description:
+        'Weather App: A weather app built with .NET 6 WPF and OpenWeather API',
+      tags: ['.NET 6', 'C#', 'WPF', 'OpenWeather API', 'XML'],
+      imageUrl: '/weather-desk.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/WeatherApp',
+      deployedUrl: 'https://github.com/Talha-Tahir2001/WeatherApp',
+    },
     
     
    
