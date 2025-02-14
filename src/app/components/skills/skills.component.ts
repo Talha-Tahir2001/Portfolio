@@ -28,15 +28,20 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
 export class SkillsComponent {
 
   mySkills = signal<Skills[]>([
-    { name: 'Angular 18' },
-    { name: 'NEST JS' },
-    {name: 'Firebase'},
-    {name: 'MongoDB'},
-    { name: 'TypeScript' },
-    { name: 'HTML 5' },
-    { name: 'Tailwind CSS' },    
-    { name: 'DaisyUI' },
-    { name: 'Prime NG'},
+    { name: 'Angular 18' , icon: 'skills/angular-svgrepo-com.svg' },
+    {name: '.NET Core', icon: 'skills/dotnet-svgrepo-com.svg'},
+    { name: 'NEST JS' , icon:'skills/nestjs-svgrepo-com.svg'},
+    {name: 'Python', icon: 'skills/python-svgrepo-com.svg'},
+    {name: 'Tensorflow', icon: 'skills/tensorflow-svgrepo-com.svg'},
+    {name: 'Node JS', icon: 'skills/node-svgrepo-com.svg'},
+    {name: 'Express JS', icon: 'skills/express-svgrepo-com.svg'},
+    {name: 'Firebase', icon: 'skills/firebase-svgrepo-com.svg'},
+    {name: 'MongoDB', icon: 'skills/mongo-svgrepo-com.svg'},
+    { name: 'TypeScript' , icon: 'skills/typescript-official-svgrepo-com.svg'},
+    { name: 'Tailwind CSS', icon: 'skills/tailwind-svgrepo-com.svg' }, 
+    { name: 'Angular Material', icon: 'skills/material-ui-svgrepo-com.svg' },   
+    { name: 'Git' , icon: 'skills/git-svgrepo-com.svg'},
+    
   ]);
 
 }
