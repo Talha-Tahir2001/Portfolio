@@ -34,10 +34,26 @@ import {
 export class ProjectsComponent {
   projects = signal<Projects[]>([
     {
+      title: 'SyntaxSweetheart',
+      description: 'SyntaxSweetheart: Where semicolons meet Cupid’s arrows',
+      tags: ['Angular', 'Tailwind CSS', 'DaisyUI','Google Gemini Pro'],
+      imageUrl: 'projects/sweetheart.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/SyntaxSweetheart',
+      deployedUrl: 'https://syntax-sweetheart.vercel.app/',      
+    },
+    {
+      title: 'Echo',
+      description: 'Echo: Your words, amplified. Share thoughts, post comments, and interact seamlessly',
+      tags: ['Angular', 'NestJS', 'MongoDB', 'Mongoose','UIVerse'],
+      imageUrl: 'projects/echo.png',
+      repoUrl: 'https://github.com/Talha-Tahir2001/echo-frontend',
+      deployedUrl: 'https://echo-frontend-mu.vercel.app/home',      
+    },
+    {
       title: 'Sentinel',
       description: 'Sentinel: An AI Powered Tool for Sentiment Analysis',
       tags: ['Angular', 'Tailwind CSS', 'DaisyUI','Google Gemini Pro'],
-      imageUrl: '/senti.png',
+      imageUrl: 'projects/senti.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/sentinel',
       deployedUrl: 'https://sentinel-xi.vercel.app/',
     },
@@ -45,7 +61,7 @@ export class ProjectsComponent {
       title: 'SpamBuster',
       description: 'SpamBuster: An AI Powered Tool for Spam Detection',
       tags: ['Python', 'Huggingface', 'Gradio','Keras', 'NLTK'],
-      imageUrl: '/spam-sms.png',
+      imageUrl: 'projects/spam.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/ML-and-DL',
       deployedUrl: 'https://huggingface.co/spaces/Talha-tahir666/Spam-SMS-Detection',
     },
@@ -53,7 +69,7 @@ export class ProjectsComponent {
       title: 'Textractor',
       description: 'Textractor: An AI-Powered tool for accurate and efficient text extraction.',
       tags: ['Angular', 'Tailwind CSS', 'Google Gemini',  ],
-      imageUrl: '/textractor.png',
+      imageUrl: 'projects/textractor.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/textractor',
       deployedUrl: 'https://textractor-blond.vercel.app/',
     },
@@ -81,7 +97,7 @@ export class ProjectsComponent {
       description:
         'Portfolio: My personal website created using Angular, Tailwind CSS, and PrimeNG.',
       tags: ['Angular', 'Tailwind CSS', 'PrimeNG'],
-      imageUrl: '/portfolio.png',
+      imageUrl: 'projects/portfolio.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/Portfolio',
       deployedUrl: 'https://portfolio-eight-chi-89.vercel.app/home',
     },
@@ -97,7 +113,7 @@ export class ProjectsComponent {
     {
       title: 'Jokesverse',
       description:
-        'Jokesverse: A CRUD app with Search Functionality, built with C# and .NET 6 MVC',
+        'Jokesverse: A Desktop CRUD app with Search Functionality, built with C# and .NET 6 MVC',
       tags: ['C#', '.Net 6 MVC', 'SQL Server', 'Entity Framework Core'],
       imageUrl: '/jokesverse-1.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/JokesVerse',
@@ -106,7 +122,7 @@ export class ProjectsComponent {
     {
       title: 'Weather App',
       description:
-        'Weather App: A weather app built with .NET 6 WPF and OpenWeather API',
+        'Weather App: A Desktop Weather app built with .NET 6 WPF and OpenWeather API',
       tags: ['.NET 6', 'C#', 'WPF', 'OpenWeather API', 'XML'],
       imageUrl: '/weather-desk.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/WeatherApp',
