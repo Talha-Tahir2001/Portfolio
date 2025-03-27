@@ -78,7 +78,7 @@ export class ProjectsComponent {
       description:
         'Weather Whiz: A weather app built with Angular and Yahoo Weather Services.',
       tags: ['Angular', 'Rest API', 'Yahoo Weather API', ],
-      imageUrl: '/weather.png',
+      imageUrl: 'projects/weather.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/WeatherWhiz',
       deployedUrl: 'https://weather-whiz-woad.vercel.app/',
     },
@@ -87,7 +87,7 @@ export class ProjectsComponent {
       description:
         'NBA CRUD App: A CRUD app built with Angular, ASP.NET CORE Web API, and SQL Server',
       tags: ['Angular', 'ASP.NET CORE', 'Angular Material', 'SQL Server'],
-      imageUrl: '/nba-crud.png',
+      imageUrl: 'projects/nba-crud.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/NbaPlayers.UI',
       deployedUrl: 'https://github.com/Talha-Tahir2001/NbaPlayers.UI',
     },
@@ -106,7 +106,7 @@ export class ProjectsComponent {
       description:
         'Snake: A basic Snake Game that was built in Java with AWT and Swing',
       tags: ['Java', 'Abstract Window Toolkit', 'Swing'],
-      imageUrl: '/snake.png',
+      imageUrl: 'projects/snake.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/Snake-Game',
       deployedUrl: 'https://github.com/Talha-Tahir2001/Snake-Game',
     },
@@ -115,7 +115,7 @@ export class ProjectsComponent {
       description:
         'Jokesverse: A Desktop CRUD app with Search Functionality, built with C# and .NET 6 MVC',
       tags: ['C#', '.Net 6 MVC', 'SQL Server', 'Entity Framework Core'],
-      imageUrl: '/jokesverse-1.png',
+      imageUrl: 'projects/jokesverse-1.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/JokesVerse',
       deployedUrl: 'https://github.com/Talha-Tahir2001/JokesVerse',
     },
@@ -124,7 +124,7 @@ export class ProjectsComponent {
       description:
         'Weather App: A Desktop Weather app built with .NET 6 WPF and OpenWeather API',
       tags: ['.NET 6', 'C#', 'WPF', 'OpenWeather API', 'XML'],
-      imageUrl: '/weather-desk.png',
+      imageUrl: 'projects/weather-desk.png',
       repoUrl: 'https://github.com/Talha-Tahir2001/WeatherApp',
       deployedUrl: 'https://github.com/Talha-Tahir2001/WeatherApp',
     },
