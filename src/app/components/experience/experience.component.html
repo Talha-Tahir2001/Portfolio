@@ -1,35 +1,44 @@
 <section class="px-4 sm:px-8 lg:px-16 py-8">
-  <h2 class="text-2xl sm:text-3xl font-medium capitalize mb-6 sm:mb-8 ">
+  <h2 class="text-2xl sm:text-3xl font-medium capitalize mb-6 sm:mb-8 text-center">
     My Experience
   </h2>
   <p-timeline
     [value]="myExperience()"
-    layout="vertical"
-    [align]="(isMobile() ? 'left' : 'alternate')"
-    class="w-full max-w-4xl mx-auto"
+    [layout]="'vertical'"
+    [align]="screenWidth <= 768 ? 'left' : 'alternate'"
+    class="max-w-4xl mx-auto w-full"
   >
     <ng-template pTemplate="content" let-event>
       <div class="event-content 
           bg-white dark:bg-gray-800 
           rounded-lg shadow-lg 
-          p-4 sm:p-6 
+          p-3 sm:p-4 my-4
           text-left 
           transition-all 
           hover:shadow-xl
           w-full
-          sm:w-[calc(100%-4rem)]">
+          sm:text-base text-sm">
         <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">
           {{ event.title }}
         </h3>
         <div class="space-y-2">
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Location:</strong> {{ event.location }}
+          <p class="text-gray-700 dark:text-gray-300">
+            <strong class="block sm:inline-block sm:w-20">Location:</strong> 
+            <span class="sm:inline block">{{ event.location }}</span>
           </p>
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Description:</strong> {{ event.description }}
-          </p>
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Date:</strong> {{ event.date }}
+          <div class="text-gray-700 dark:text-gray-300">
+            <strong class="block sm:inline-block sm:align-top sm:w-20 mb-1 sm:mb-0">Description:</strong> 
+            <ul class="list-disc pl-5 sm:pl-0 sm:inline-block sm:w-[calc(100%-5rem)] mt-2 sm:mt-0 sm:ml-5">
+              @for (points of event.description; track $index) {
+                <li class="mb-1 sm:mb-2">
+                  {{ points }}
+                </li>
+              }
+            </ul>
+          </div>
+          <p class="text-gray-700 dark:text-gray-300">
+            <strong class="block sm:inline-block sm:w-14">Date:</strong> 
+            <span class="sm:inline block">{{ event.date }}</span>
           </p>
         </div>
       </div>
@@ -37,63 +46,13 @@
 
     <ng-template pTemplate="marker" let-event>
       <span class="timeline-marker flex items-center justify-center 
-          w-8 h-8 rounded-full 
+          w-6 h-6 sm:w-8 sm:h-8 rounded-full 
           bg-white dark:bg-slate-700 
           shadow-md
           transition-all duration-300 
           hover:scale-110">
-        <i [class]="event.icon + ' text-lg text-slate-800 dark:text-white'"></i>
+        <i [class]="event.icon + ' text-base sm:text-lg text-slate-800 dark:text-white'"></i>
       </span>
     </ng-template>
   </p-timeline>
 </section>
-
-
-  <!-- <section class="flex flex-col items-start sm:items-center px-4 sm:px-8 lg:px-16 py-8">
-    <h2 class="text-2xl sm:text-3xl font-medium capitalize mb-6 sm:mb-8 text-center w-full">
-      My Experience
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
-      <div class="flex flex-col items-start">
-        <div class="flex items-center mb-4">
-          <i class="pi pi-map-marker text-lg sm:text-xl text-gray-900 dark:text-gray-50 mr-3"></i>
-          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-50">
-            Graduated from University
-          </h3>
-        </div>
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-3 sm:p-4 text-left transition-all hover:shadow-xl w-full">
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Location:</strong> Miami, FL
-          </p>
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Description:</strong> Graduated with a Bachelor's of Science in Software Engineering
-          </p>
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Date:</strong> Oct 2020 - Jul 2024
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-col items-start">
-        <div class="flex items-center mb-4">
-          <i class="pi pi-map-marker text-lg sm:text-xl text-gray-900 dark:text-gray-50 mr-3"></i>
-          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-50">
-            Front-End Developer
-          </h3>
-        </div>
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-3 sm:p-4 text-left transition-all hover:shadow-xl w-full">
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Location:</strong> Orlando, FL
-          </p>
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Description:</strong> I worked as a front-end developer for 2 years. In 1 year in another job I uplifted the full stack
-          </p>
-          <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            <strong>Date:</strong> 2019 - 2021
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-
-  
