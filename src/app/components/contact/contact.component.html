@@ -14,7 +14,7 @@
     class="mt-10 flex flex-col"
   >
     <!-- Name -->
-    <input
+    <input id="name" autocomplete="on"
       formControlName="name"
       placeholder="Your Name"
       class="h-14 px-4 rounded-lg mb-2 borderBlack bg-white dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 focus:outline-none focus:ring-2 transition-all"
@@ -28,7 +28,7 @@
     }
 
     <!-- Email -->
-    <input
+    <input id="email" autocomplete="on"
       formControlName="email"
       type="email"
       placeholder="Your Email"
@@ -43,7 +43,7 @@
     }
 
     <!-- Message -->
-    <textarea
+    <textarea id="message" autocomplete="on"
       formControlName="message"
       rows="5"
       placeholder="Your Message"
@@ -60,7 +60,7 @@
     <!-- Submit -->
     <button
       type="submit"
-      [disabled]="contactForm.invalid"
+      
       class="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65 disabled:cursor-not-allowed"
     >
       Submit
